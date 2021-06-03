@@ -1,0 +1,163 @@
+=== RUN   TestManyMasterFailures
+2021/05/11 03:01:08 rpc.Register: method "CleanupFiles" has 1 input parameters; needs exactly three
+2021/05/11 03:01:08 rpc.Register: method "Lock" has 1 input parameters; needs exactly three
+2021/05/11 03:01:08 rpc.Register: method "Unlock" has 1 input parameters; needs exactly three
+2021/05/11 03:01:08 rpc.Register: method "Wait" has 1 input parameters; needs exactly three
+2021/05/11 03:01:08 rpc.Register: method "Lock" has 1 input parameters; needs exactly three
+2021/05/11 03:01:08 rpc.Register: method "Unlock" has 1 input parameters; needs exactly three
+updateWorkerLog: Adding /var/tmp/824-1000/mr15435-worker1 to log file!
+recoverMaster: Attempting to recover master!
+recoverMaster: Failed to recover master! Read: , Expected test
+overwriteTaskLog: New jobName test 	 new phase Map!
+overwriteWorkerLog: New jobName test 
+overwriteWorkerLog: Overwritten log file!
+/var/tmp/824-1000/mr15435-master: Starting Map/Reduce task test
+Schedule: NotCompleted: 0
+Schedule: NotCompleted: 1
+Schedule: NotCompleted: 2
+Schedule: NotCompleted: 3
+Schedule: NotCompleted: 4
+Schedule: NotCompleted: 5
+Schedule: NotCompleted: 6
+Schedule: NotCompleted: 7
+Schedule: NotCompleted: 8
+Schedule: NotCompleted: 9
+Schedule: NotCompleted: 10
+Schedule: NotCompleted: 11
+Schedule: NotCompleted: 12
+Schedule: NotCompleted: 13
+Schedule: NotCompleted: 14
+Schedule: NotCompleted: 15
+2021/05/11 03:01:08 rpc.Register: method "Lock" has 1 input parameters; needs exactly three
+2021/05/11 03:01:08 rpc.Register: method "Unlock" has 1 input parameters; needs exactly three
+updateWorkerLog: Adding /var/tmp/824-1000/mr15435-worker0 to log file!
+updateTaskLog: Adding 0 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 15 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 1 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 2 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 3 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 4 to log file!
+updateTaskLog: Updated log file!
+
+Test: Simulating master failure!
+
+
+Test: Simulating master reboot!
+
+2021/05/11 03:01:19 rpc.Register: method "CleanupFiles" has 1 input parameters; needs exactly three
+2021/05/11 03:01:19 rpc.Register: method "Lock" has 1 input parameters; needs exactly three
+2021/05/11 03:01:19 rpc.Register: method "Unlock" has 1 input parameters; needs exactly three
+2021/05/11 03:01:19 rpc.Register: method "Wait" has 1 input parameters; needs exactly three
+recoverMaster: Attempting to recover master!
+recoverMaster: jobName matches!
+recoverMaster: Phase is Map!
+recoverMaster: Found completed task 0!
+recoverMaster: Found completed task 15!
+recoverMaster: Found completed task 1!
+recoverMaster: Found completed task 2!
+recoverMaster: Found completed task 3!
+recoverMaster: Found completed task 4!
+recoverWorkers: Attempting to recover workers!
+recoverWorkers: jobName matches!
+recoverWorkers: Found worker /var/tmp/824-1000/mr15435-worker0!
+overwriteWorkerLog: New jobName test 
+overwriteWorkerLog: Overwritten log file!
+ReRegistering /var/tmp/824-1000/mr15435-worker0
+updateWorkerLog: Adding /var/tmp/824-1000/mr15435-worker0 to log file!
+recoverWorkers: Successfully recovered workers!
+recoverMaster: Successfully recovered master!
+/var/tmp/824-1000/mr15435-master: Continuing Map/Reduce task test
+Schedule: NotCompleted: 14
+Schedule: NotCompleted: 13
+Schedule: NotCompleted: 12
+Schedule: NotCompleted: 11
+Schedule: NotCompleted: 10
+Schedule: NotCompleted: 5
+Schedule: NotCompleted: 6
+Schedule: NotCompleted: 7
+Schedule: NotCompleted: 8
+Schedule: NotCompleted: 9
+updateTaskLog: Adding 9 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 14 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 13 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 12 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 11 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 10 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 5 to log file!
+updateTaskLog: Updated log file!
+
+Test: Simulating master failure!
+
+
+Test: Simulating master reboot!
+
+2021/05/11 03:01:29 rpc.Register: method "CleanupFiles" has 1 input parameters; needs exactly three
+2021/05/11 03:01:29 rpc.Register: method "Lock" has 1 input parameters; needs exactly three
+2021/05/11 03:01:29 rpc.Register: method "Unlock" has 1 input parameters; needs exactly three
+2021/05/11 03:01:29 rpc.Register: method "Wait" has 1 input parameters; needs exactly three
+recoverMaster: Attempting to recover master!
+recoverMaster: jobName matches!
+recoverMaster: Phase is Map!
+recoverMaster: Found completed task 0!
+recoverMaster: Found completed task 15!
+recoverMaster: Found completed task 1!
+recoverMaster: Found completed task 2!
+recoverMaster: Found completed task 3!
+recoverMaster: Found completed task 4!
+recoverMaster: Found completed task 9!
+recoverMaster: Found completed task 14!
+recoverMaster: Found completed task 13!
+recoverMaster: Found completed task 12!
+recoverMaster: Found completed task 11!
+recoverMaster: Found completed task 10!
+recoverMaster: Found completed task 5!
+recoverWorkers: Attempting to recover workers!
+recoverWorkers: jobName matches!
+recoverWorkers: Found worker /var/tmp/824-1000/mr15435-worker0!
+overwriteWorkerLog: New jobName test 
+overwriteWorkerLog: Overwritten log file!
+ReRegistering /var/tmp/824-1000/mr15435-worker0
+updateWorkerLog: Adding /var/tmp/824-1000/mr15435-worker0 to log file!
+recoverWorkers: Successfully recovered workers!
+recoverMaster: Successfully recovered master!
+/var/tmp/824-1000/mr15435-master: Continuing Map/Reduce task test
+Schedule: NotCompleted: 8
+Schedule: NotCompleted: 7
+Schedule: NotCompleted: 6
+updateTaskLog: Adding 6 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 8 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 7 to log file!
+updateTaskLog: Updated log file!
+overwriteTaskLog: New jobName test 	 new phase Reduce!
+Schedule: NotCompleted: 0
+Schedule: NotCompleted: 1
+Schedule: NotCompleted: 2
+updateTaskLog: Adding 2 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 0 to log file!
+updateTaskLog: Updated log file!
+updateTaskLog: Adding 1 to log file!
+updateTaskLog: Updated log file!
+overwriteTaskLog: New jobName test 	 new phase Merge!
+Master Distributed: killing workers!
+/var/tmp/824-1000/mr15435-master: Map/Reduce task completed
+job: test with [16] mappers and [3] reducers completes in 4.648669seconds
+
+Test: Simulating master failure!
+
+--- PASS: TestManyMasterFailures (25.78s)
+PASS
+ok  	mr/mapreduce	25.784s

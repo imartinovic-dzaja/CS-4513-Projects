@@ -1,0 +1,12 @@
+Based on the criteria provided I'd say my implementation Exceeds expectations (29 point)
+The implementation works for the test cases I used, altough because of time contraints I probably did not cover all the ways it could fail.
+
+Its weakness is the testing, and the many "if mr.hasAborted" statements. For the final release these would obviously be reomoved, however even with them there, the code demonstrates perfect functionality.
+
+The code fully addresses the  proposed design, i.e. it manages to recover information from a failed master such as the 
+completed tasks and registered workers and successfully complete the task from there. 
+
+The code is organized and well documented. (all functions provided are documented in both the README and the source code)
+
+
+P.S. I spent  way too much time on this (~28 hours), so at least A for effort. The concept and workflow was easy to understand, but I had issues effectively implementing testing as mentioned previously.
